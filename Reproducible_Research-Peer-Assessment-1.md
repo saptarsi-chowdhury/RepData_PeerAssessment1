@@ -235,7 +235,7 @@ the dataset.
 
     ggplot(noNA, aes(date, steps)) + geom_bar(stat = "identity", colour = "steelblue", fill = "steelblue", width = 0.7) + facet_grid(. ~ month, scales = "free") + labs(title = "Histogram of Total Number of Steps Taken Each Day", x = "Date", y = "Total number of steps")
 
-![](figures/unnamed-chunk-3-1.png)
+![](figure/unnamed-chunk-3-1.png)
 
 -   Calculate and report the mean and median total number of steps taken
     per day
@@ -266,7 +266,7 @@ Median total number of steps taken per day:
 
     ggplot(avgSteps, aes(interval, meanOfSteps)) + geom_line(color = "steelblue", size = 0.8) + labs(title = "Time Series Plot of the 5-minute Interval", x = "5-minute intervals", y = "Average Number of Steps Taken")
 
-![](figures/unnamed-chunk-6-1.png)
+![](figure/unnamed-chunk-6-1.png)
 
 -   Which 5-minute interval, on average across all the days in the
     dataset, contains the maximum number of steps?
@@ -333,7 +333,7 @@ NA value in the steps column.
                                                  fill = "steelblue",
                                                  width = 0.7) + facet_grid(. ~ month, scales = "free") + labs(title = "Histogram of Total Number of Steps Taken Each Day (no missing data)", x = "Date", y = "Total number of steps")
 
-![](figures/unnamed-chunk-10-1.png)
+![](figure/unnamed-chunk-10-1.png)
 
 -   Do these values differ from the estimates from the first part of the
     assignment? What is the impact of imputing missing data on the
@@ -426,4 +426,4 @@ steps taken per day is greater than that of the old median.
            layout = c(1, 2), type = "l", 
            xlab = "Interval", ylab = "Number of steps")
 
-![](figures/unnamed-chunk-15-1.png)
+![](figure/unnamed-chunk-15-1.png)
