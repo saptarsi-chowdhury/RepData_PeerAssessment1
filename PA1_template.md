@@ -99,7 +99,7 @@ avgSteps[avgSteps$meanOfSteps == max(avgSteps$meanOfSteps), ]
 ## 104      835       206.2
 ```
 
-### Imputing missing values
+### Input missing values
 * The total number of rows with NAs:
 
 
